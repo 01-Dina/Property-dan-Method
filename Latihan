@@ -1,0 +1,10 @@
+class produk{
+ public $namaBarang, $merk, $harga;
+
+public function sayHalo(){
+ return "Saya Dina Dessiyani";
+}
+}
+
+$produk1=new produk();
+$produk1->sayHalo()
