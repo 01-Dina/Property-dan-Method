@@ -1,0 +1,23 @@
+<?php
+class produk {
+	public $namaBarang = "Handphone",
+		   $merk = "Xiomi",
+		   $harga = "1.200.0000";
+
+	public function getCetak(){
+		return "$this->namaBarang, $this->merk, $this->harga";
+	}
+}
+
+$produk2 = new produk();
+$produk2 ->namaBarang="Keyboard";
+$produk2 ->propertyBaru="Merah";
+echo "Nama Barang 1: " . $produk2->getCetak();
+
+echo "<br>";
+
+$produk3 = new produk();
+$produk3 ->namaBarang="Jam";
+$produk3 ->merk="Casio";
+$produk3 ->harga=340.000;
+echo "Nama Barang 2: " . $produk3->getCetak();
