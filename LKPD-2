@@ -1,0 +1,26 @@
+<?php
+class Absen{
+	public $nama, $jk, $nis, $rayon;
+	public function Hadir(){
+		return "Hadir";
+	}
+}
+	$absensi = new Absen();
+	$absensi->nama="Dina Dessiyani";
+	$absensi->jk="Perempuan";
+	$absensi->nis="11907108";
+	$absensi->rayon="Cisarua 6";
+
+	echo "ABSENSI";
+	echo "<br>";
+	echo "Nama :".$absensi->nama;
+	echo "<br>";
+	echo "Jenis Kelamin: ".$absensi->jk;
+	echo "<br>";
+	echo "NIS: ".$absensi->nis;
+	echo "<br>";
+	echo "Rayon: ".$absensi->rayon;
+	echo "<br>";
+	echo $absensi->Hadir();
+
+?>
